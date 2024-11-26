@@ -25,7 +25,12 @@
                     <x-radio-group name="experience"
                                    :options="\App\Models\Job::$experience"/>
                 </div>
-                <div>4</div>
+                <div>
+                    <div class="mb-1 font-semibold">Category</div>
+                    <x-radio-group name="category"
+                                   :options="\App\Models\Job::$category"/>
+
+                </div>
 
                 <button class="w-full mx-auto border rounded-md border-slate-300
                 py-1 text-center text-sm font-semibold text-black shadow-sm
