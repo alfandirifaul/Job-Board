@@ -13,7 +13,6 @@
                 </div>
                 <div>
                     <div class="mb-1 font-semibold">Salary</div>
-
                     <div class="flex space-x-2">
                         <x-text-input name="min_salary" value="{{ request('min_salary') }}"
                                       placeholder="From"/>
@@ -21,7 +20,33 @@
                                       placeholder="To"/>
                     </div>
                 </div>
-                <div>3</div>
+                <div>
+                    <div class="mb-1 font-semibold">Experience</div>
+
+                    <label for="experience" class="mb-1 flex items-center">
+                        <input type="radio" name="experience" value=""
+                            @checked(!request('experience'))>
+                        <span class="ml-2">All</span>
+                    </label>
+
+                    <label for="experience" class="mb-1 flex items-center">
+                        <input type="radio" name="experience" value="entry"
+                            @checked('entry' === request('experience'))>
+                        <span class="ml-2">Entry</span>
+                    </label>
+
+                    <label for="experience" class="mb-1 flex items-center">
+                        <input type="radio" name="experience" value="intermediate"
+                            @checked('intermediate' === request('experience'))>
+                        <span class="ml-2">Intermediate</span>
+                    </label>
+
+                    <label for="experience" class="mb-1 flex items-center">
+                        <input type="radio" name="experience" value="senior"
+                            @checked('senior' === request('experience'))>
+                        <span class="ml-2">Senior</span>
+                    </label>
+                </div>
                 <div>4</div>
 
                 <button class="w-full mx-auto border rounded-md border-slate-300
