@@ -23,7 +23,12 @@
                 <div>
                     <div class="mb-1 font-semibold">Experience</div>
                     <x-radio-group name="experience"
-                                   :options="\App\Models\Job::$experience"/>
+                                   :options="array_combine(
+                                        array_map('ucfirst', \App\Models\Job::$experience),
+                                        \App\Models\Job::$experience
+                                   )"/>
+
+
                 </div>
                 <div>
                     <div class="mb-1 font-semibold">Category</div>
@@ -31,12 +36,14 @@
                                    :options="\App\Models\Job::$category"/>
 
                 </div>
+                <div class="col-span-2">
+                    <button class="w-full border rounded-md border-slate-300
+                                   py-1 text-center text-sm font-semibold text-black shadow-sm
+                                   hover:bg-slate-100 items-center">
+                        Filter
+                    </button>
+                </div>
 
-                <button class="w-full mx-auto border rounded-md border-slate-300
-                py-1 text-center text-sm font-semibold text-black shadow-sm
-                hover:bg-slate-100 items-center">
-                    Filter
-                </button>
             </div>
         </form>
     </x-card>
