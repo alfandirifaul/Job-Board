@@ -8,9 +8,9 @@
         </div>
     </div>
 
-    <div class="mb-4 flex justify-between text-sm text-slate-700 items-center">
+    <div class="mb-4 flex justify-between text-sm text-slate-700 items-center font-semibold">
         <div class="flex space-x-4">
-            <div>Company Name</div>
+            <div>{{ $job->employer->company_name }}</div>
             <div>{{ $job->location }}</div>
         </div>
 
