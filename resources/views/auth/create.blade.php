@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <x-button class="w-full bg-green-50">
+            <x-button class="w-full">
                 Login
             </x-button>
 
