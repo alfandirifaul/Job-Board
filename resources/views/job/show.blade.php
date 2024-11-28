@@ -12,8 +12,11 @@
     </x-job-card>
 
     <x-card class="mb-4 ">
-        <h2 class="mb-4 text-lg font-medium">
-            More for {{ $job->employer->company_name }} Jobs
+        <h3 class="text-xs">
+            More Jobs from
+        </h3>
+        <h2 class="mb-4 text-lg font-bold">
+            {{ $job->employer->company_name }}
         </h2>
 
         <div class="text-sm text-slate-500">

@@ -1,6 +1,6 @@
 <x-card class="mb-2">
     <div class="mb-4 flex justify-between">
-        <h2 class="text-lg font-medium">
+        <h2 class="text-xl font-bold">
             {{ $job->title }}
         </h2>
         <div class="text-slate-500">

@@ -8,7 +8,7 @@
            'resources/js/app.js'])
     <title>Laravel Job Board</title>
 </head>
-<body class="mx-auto mt-10 max-w-xl text-slate-700
+<body class="mx-auto mt-10 max-w-xl
              bg-gradient-to-r from-indigo-200 from-10%
              via-sky-500 via-30% to-emerald-500 to-90%">
     {{ $slot }}
